@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vue-tips</title>
+</head>
+<body>
+  <div id="app">
+    <button @click="foo1">默认 3 秒关闭</button>
+    <button @click="foo2">自定义 5 秒关闭</button>
+    <button @click="foo3">回调函数</button>
+  </div>
+
+  <script src="https://unpkg.com/vue@2.4.2"></script>
+  <script src="./dist/vue-tips.js"></script>
+  <script>
+  new Vue({
+    el: '#app',
+    methods: {
+      foo1 () {
+        this.$tips.show("默认 3 秒关闭")
+      },
+      foo2 () {
+        this.$tips.show("自定义 5 秒关闭", {
+          delay: 5000
+        })
+      },
+      foo3 () {
+        this.$tips.show("回调函数", () => {
+          alert('这里是回调函数')
+        })
+      }
+    }
+  })
+  </script>
+</body>
+</html>
