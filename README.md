@@ -2,12 +2,12 @@
 
 一个专注于 Vue 的提示插件，高度可定制。
 
-[Demo](https://github.com/bxm0927/vue-tips)
+[Demo](https://bxm0927.github.io/vue-tips)
 
 # Installation
 
 ```bash
-$ npm install vue-lazyload
+$ npm install vue-tips
 ```
 
 # Usage

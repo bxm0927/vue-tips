@@ -1,7 +1,7 @@
 {
   "name": "vue-tips",
   "description": "一个专注于 Vue 的提示插件，高度可定制。",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "author": "白小明",
   "private": false,
   "license": "MIT",
